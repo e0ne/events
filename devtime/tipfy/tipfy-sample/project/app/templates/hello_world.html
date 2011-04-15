@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <style type="text/css">
+        h1 {
+            color: #0099FF;
+            font-family: 'trebuchet ms', trebuchet, arial, sans-serif;
+            font-size: 72px;
+            text-align: center;
+            margin-top: 24px;
+        }
+    </style>
+    <h1>{{ message|e }}</h1>
+
+{% endblock %}

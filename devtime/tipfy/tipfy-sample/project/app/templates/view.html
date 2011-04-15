@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <ul>
+        {% for event in events %}
+            <li>
+                Date: {{ event.date }}, topics:
+                {% for topic in event.topics %}
+                    <strong>{{ topic }}</strong>
+                {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
